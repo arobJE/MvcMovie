@@ -1,0 +1,114 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewData["Title"]</title>
+
+    <!-- Bootstrap CSS (You can replace this with your preferred CSS framework) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        body {
+
+            font-family: 'Arial', sans-serif;
+            background-image:url("images/cinema-verdi.jpg"); /* Replace with your movie-themed background image */
+            backdrop-filter:brightness(0.9);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .movie-landing {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .movie-content {
+            text-align: center;
+        }
+
+            .movie-content h1 {
+                font-size: 3em;
+                margin-bottom: 20px;
+            }
+
+            .movie-content p {
+                font-size: 1.5em;
+                margin-bottom: 30px;
+            }
+
+            .movie-content a {
+                color: black;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+        .movie-catalog {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .catalog-item {
+            margin: 0 10px;
+        }
+
+            .catalog-item img {
+                max-width: 100%;
+                height: 400px;
+                margin-bottom:200px;
+            }
+
+    </style>
+</head>
+
+<body >
+
+    <div class="movie-landing">
+        <div class="movie-content">
+            <h1 class="display-4">Find Your Movie Needs</h1>
+            <p>Discover the latest and classic movies and dive into the world of cinema.</p>
+            <a href="/Movies" class="btn btn-warning btn-lg">Browse Movies</a>
+            <p></p>
+            <p>Available Movie Trailer</p>
+
+            <div class="movie-catalog">
+                <div class="catalog-item">
+                    <a href="https://www.youtube.com/watch?v=2zhDfUAQSbs&pp=ygUMZ2hvc3QgYnVzdGVy"><img src="images/ghostbuster1.jpg" alt="Action Movies"></a>
+                </div>
+                <div class="catalog-item">
+                    <a href="https://www.youtube.com/watch?v=weIqC-oUGmA&pp=ygUOZ2hvc3QgYnVzdGVyIDI%3D"><img src="images/ghostbuster2.jpg" alt="Drama Movies"></a>
+                </div>
+                <div class="catalog-item">
+                    <a href="https://www.youtube.com/watch?v=WPO12ZzGS84&pp=ygUJcmlvIGJyYXZv"><img src="images/riobravo.jpg" alt="Comedy Movies"></a>
+                </div>
+                <div class="catalog-item">
+                    <a href="https://www.youtube.com/watch?v=-E10AcydCuk&ab_channel=Shout%21Studios"><img src="images/harry.jpg" alt="Rom Movies"></a>
+                </div>
+        </div>
+    </div>
+
+    
+        <!-- Bootstrap JS (You can replace this with your preferred JS framework) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
